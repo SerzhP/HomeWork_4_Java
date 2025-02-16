@@ -1,0 +1,26 @@
+Challenges:
+15.
+• What is the reserved keyword const purpose in Java?
+• Can it be used?
+
+ The const keyword in Java is a reserved keyword, but it is not used.
+ It was intended to define constant variables (variables whose values cannot be changed once assigned)
+ similar to final, but it was never implemented in the language.
+
+ Instead, the final keyword is used for this purpose in Java.
+
+
+
+16.
+• What is “Cyclic inheritance”?
+• Is it allowed in Java?
+• Write one (ignore any errors).
+
+Cyclic inheritance occurs when two or more classes are involved in a circular dependency,
+meaning Class A depends on Class B, and Class B, in turn, depends on Class A.
+This creates a cycle, which can lead to logical and runtime errors.
+
+If you try to create cyclic inheritance in Java, the compiler will generate an error.
+
+class Class Pony extends Class Horse {  }
+ class Class Horse extends Class Pony {  }
